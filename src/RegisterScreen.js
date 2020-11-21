@@ -46,14 +46,17 @@ class RegisterScreen extends Component {
                     keyboardType={'email-address'}
                     autoCapitalize={'none'}
                     autoCorrect={false}
-                    style={styles.input} placeholder="Email">
+                    style={styles.input}
+                    placeholder="Email">
                 </TextInput>
                 <TextInput
                     onChangeText={(text) => this.setState({ password: text })}
-                    style={styles.input}
-                    placeholder="Password"
+                    autoCapitalize={'none'}
                     autoCorrect={false}
-                    secureTextEntry={true}>
+                    style={styles.input}
+                    //secureTextEntry={true}
+                    placeholder="Password"
+                    >
                 </TextInput>
                 <TouchableHighlight onPress={this.onRegisterPressed.bind(this)} style={styles.registerButton}>
                     <Text style={styles.registerButtonText}>

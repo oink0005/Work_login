@@ -14,7 +14,6 @@ import {
 
 class LoginScreen extends Component {
 
-
     constructor(props){
         super(props)
         this.state = {

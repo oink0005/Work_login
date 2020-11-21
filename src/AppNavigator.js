@@ -5,12 +5,14 @@ import LoginScreen from './LoginScreen'
 import RegisterScreen from './RegisterScreen'
 import HomeScreen from './imgs/HomeScreen';
 
+//import LoginScreen from './LoginScreen_BK'
+
 const Stack = createStackNavigator()
 
 const RootStack = () => {
     return (
       <Stack.Navigator
-        initialRouteName
+        initialRouteName="Login"
         >
         <Stack.Screen
           name="Login"

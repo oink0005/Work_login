@@ -11,24 +11,19 @@ import {
     View,
     ScrollView
 } from 'react-native'
-import { useRoute } from '@react-navigation/native';
 
-onLonginPressed = ()=>{
-    navigation.navigate('Home')
+
+const LoginScreen = () => {
+
+onLonginPressed = (props)=>{
+    porps.navigation.navigate('Home')
 }
-function onLonginPressed() {
-    const route = useRoute();
-  
-    return <Text>{route.params.caption}</Text>;
-  }
-
 onRegisterPressed = ()=>{
     Alert.alert("Register")
     this.props.navigation.navigate('Register')
 }
-
-export default function LoginScreen() {
     return (
+        
         <ScrollView style={styles.scrollView}>
             <View style={styles.container}>
                 <Image
@@ -144,3 +139,5 @@ const styles = StyleSheet.create({
         marginTop: 20
     }
 });
+
+export default LoginScreen
